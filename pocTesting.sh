@@ -4,7 +4,7 @@ do
 if [[ "$extra" -eq 0 ]]
 then
         echo Method:- $method, API:- $api, Result:- $result;
-        status=$(curl -so /dev/null -w '%{response_code}' $api) || true
+        status=$(curl -so /dev/null -w '%{response_code}' $api)
 
         echo Status :- $status
 
@@ -20,7 +20,7 @@ then
         fi
 else
         echo Method:- $method, API:- $api, Result:- $result;
-        status=$(curl -so /dev/null -w '%{response_code}' $api) || true
+        status=$(curl -so /dev/null -w '%{response_code}' $api)
 
         status="unkown"
 
@@ -31,6 +31,7 @@ else
         else
 
                         echo "API Fail"
+                        exit 1;
 
         fi
 
