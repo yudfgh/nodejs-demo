@@ -1,2 +1,2 @@
-GET,http://dummy.restapiexamples.com/api/v1/employees,200,0
-POST,http://dummy.com/api/v1,blackmask,1
+GET,http://dummy.restapiexample.com/api/v1/employees,200,0
+POST,http://dummys.com/api/v1,blackmask,1
