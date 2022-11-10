@@ -16,6 +16,7 @@ then
         else
 
                 echo "API Fail"
+                exit 1;
         fi
 else
         echo Method:- $method, API:- $api, Result:- $result;
