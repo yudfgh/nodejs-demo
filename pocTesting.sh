@@ -22,9 +22,9 @@ else
         echo Method:- $method, API:- $api, Result:- $result;
         status=$(curl -so /dev/null -w '%{response_code}' $api)
 
-        status="unkown"
-
-        if [[ "$result" -eq "blackmask" ]]
+        echo $status
+        string=$(curl $api | grep $result)
+        if [[ "0" -eq "$?" ]]
         then
                         echo "API Pass"
 
